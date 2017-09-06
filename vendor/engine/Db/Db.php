@@ -9,7 +9,7 @@ class Db
 
 	private function __construct()
 	{
-		$this->db = new \mysqli('localhost', 'root', 'undersun', 'db');
+		$this->db = new \mysqli('localhost', 'root', '', 'jsstore');
 	}
 
 	public static function getInstance()
