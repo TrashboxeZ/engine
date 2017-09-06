@@ -4,6 +4,7 @@ namespace App\controllers;
 
 use App\models\News;
 use Engine\Controller;
+use Carbon\Carbon;
 
 class IndexController extends Controller
 {
@@ -14,7 +15,7 @@ class IndexController extends Controller
 
         $this->view->render('default/index', [
             'news' => $allNews,
-            'hello' => 'World'
+            'hello' => Carbon::now()
         ]);
     }
 }

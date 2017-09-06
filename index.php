@@ -1,6 +1,7 @@
 <?php
 
 $loader = require 'vendor/autoload.php';
+
 $loader->addPsr4('Engine\\', __DIR__ . '/vendor/engine');
 $loader->addPsr4('App\\', __DIR__ . '/app');
 

@@ -17,7 +17,7 @@ class View
         
         if(is_null($this->template)){
         
-            $viewFile . $view . '.php';
+            $viewFile .= $view . '.php';
 
             if(file_exists($viewFile)){
                 
