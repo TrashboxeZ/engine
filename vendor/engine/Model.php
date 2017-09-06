@@ -59,7 +59,7 @@ class Model extends AbstractDb
         if(!empty($id)){
             
             $sql = "DELETE FROM " . $this->table . " WHERE id = " . $id;
-            $this->_b->query($sql);
+            $this->db->query($sql);
             
         }else{
             throw new Exception("ID can't found");
